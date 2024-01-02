@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #345DA7;
+    display: flex;
+    align-items: center;
+    float: left;
+    padding: 20px;
+    height: 560px;
+    width: 180px;
+}
+header,
+footer {
+    height: 20vh;
+    background-color: #4BB4DE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    height: 60vh;
+    display: flex;
+}
+
+article {
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFDBCD;
+}
+
+aside {
+    background-color: #3B8AC4;;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

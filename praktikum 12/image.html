@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image</title>
+  </head>
+  <body align="center" style="background-color: beige">
+    <label for="select">Pilih Gambar</label>
+    <select id="select" onchange="gambar()">
+      <option hidden></option>
+      <option value="1">Kucing</option>
+      <option value="2">Bebek</option>
+      <option value="3">Burung</option>
+      <option value="4">Plesiosaurus</option>
+      <option value="5">Ammonite</option>
+      <option value="6">Axolotl</option>
+      <option value="7">Belangkas</option>
+      <option value="8">Ankylosaurus</option>
+    </select>
+    <span id="gambar"></span>
+
+    <script>
+      function gambar() {
+        let pilih = document.getElementById("select").value;
+        if (pilih == "1") {
+          document.getElementById("gambar").innerHTML =
+            '<br><br><img src="https://dl.dropbox.com/scl/fi/ne308gbok9q4kboixwrcc/kucing1.jpg?rlkey=5ntfhjh2ra6m9kj88g2uw7hs8&dl=0" width="30%" style="border:2px solid black">';
+          alert("ini gambar Kucing");
+        } else if (pilih == "2") {
+          document.getElementById("gambar").innerHTML =
+            '<br><br><img src="https://dl.dropbox.com/scl/fi/lrkcope2t5i98xt925sel/duck2.jpg?rlkey=4x69c2bkycb5y07550ghl4b0r&dl=0" width="30%" style="border:2px solid black">';
+          alert("ini gambar Bebek");
+        } else if (pilih == "3") {
+          document.getElementById("gambar").innerHTML =
+            '<br><br><img src="https://dl.dropbox.com/scl/fi/gzze62vvwqqrzuk7r8ro2/burung2.png?rlkey=8a2ux96i2l66pr0lg7fj2xupo&dl=0" width="30%" style="border:2px solid black">';
+          alert("ini gambar Burung");
+        } else if (pilih == "4") {
+          document.getElementById("gambar").innerHTML =
+            '<br><br><img src="https://dl.dropbox.com/scl/fi/s0dfnfl4inx4qcku2d5su/plesiosaurus.jpg?rlkey=s6kfnmmojzzto6ebppm5t3gmy&dl=0" width="30%" style="border:2px solid black">';
+          alert("ini gambar Plesiosaurus");
+        } else if (pilih == "5") {
+          document.getElementById("gambar").innerHTML =
+            '<br><br><img src="https://dl.dropbox.com/scl/fi/5jgjec8hng4se51wixggr/ammonite.webp?rlkey=jroc2n442kwbzerwbqx88eui3&dl=0" width="30%" style="border:2px solid black">';
+          alert("ini gambar Ammonite");
+        } else if (pilih == "6") {
+          document.getElementById("gambar").innerHTML =
+            '<br><br><img src="https://dl.dropbox.com/scl/fi/xp4hp4an757bn1pou6yq5/axolotl.jpg?rlkey=oe4u0qenbm9ts0kv7bk3q77ms&dl=0" width="30%" style="border:2px solid black">';
+          alert("ini gambar Axolotl");
+        } else if (pilih == "7") {
+          document.getElementById("gambar").innerHTML =
+            '<br><br><img src="https://dl.dropbox.com/scl/fi/whet22q4gqeil4qvq2cqo/belangkas.jpg?rlkey=56whtfaiwbk838y8ou6usr05y&dl=0" width="30%" style="border:2px solid black">';
+          alert("ini gambar Belangkas");
+        } else {
+          document.getElementById("gambar").innerHTML =
+            '<br><br><img src="https://dl.dropbox.com/scl/fi/41ayg3k8putuhmyukl3c3/ankylosaurus.jpg?rlkey=2uwb9jh18ng6o4t57m6y6lhfo&dl=0" width="30%" style="border:2px solid black">';
+          alert("ini gambar Ankylosaurus");
+        }
+      }
+    </script>
+  </body>
+</html>

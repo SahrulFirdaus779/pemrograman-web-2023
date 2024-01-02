@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style4.css">
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="">
+            <h1>Registration</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div class="error1"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error2"></div>
+            </div>
+            <div class="input-control">
+                <label for="jam_pemberangkatan">Jam Pemberangkatan</label>
+                <input id="jam_pemberangkatan"name="jam_pemberangkatan" type="time">
+                <div class="error3"></div>
+            </div>
+            <div class="input-control">
+                <label for="Tujuan_pemberangkatan">Tujuan Pemberangkatan</label>
+                <input id="Tujuan_pemberangkatan"name="Tujuan_pemberangkatan" type="text">
+                <div class="error4"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Jumlah tiket</label>
+                <input id="Jumlah_tiket"name="Jumlah_tiket" type="number">
+                <div class="error5"></div>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <span id="buatdata"></span>
+    </div>
+    <script>
+        function valid() {
+      let username = document.forms["form"]["username"].value;
+      let email = document.forms["form"]["email"].value;
+      let jam_pemberangkatan = document.forms["form"]["jam_pemberangkatan"];
+      let Tujuan_pemberangkatan =
+        document.forms["form"]["Tujuan_pemberangkatan"];
+      let Jumlah_tiket = document.forms["form"]["Jumlah_tiket"];
+      let emailValid =
+        /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      let jamValid = /^([0-1][0-9]|2[0-3]):([0-5][0-9])$/;
+      //nama pengguna
+      if (username.length > 30) {
+        document.getElementById("error1").textContent = "Error";
+        document.forms["form"]["username"].value = "";
+        document.getElementById("data").innerHTML = "";
+        alert("Data tidak valid\nNama melebihi 30 karakter");
+      } else if (username == "") {
+        document.getElementById("error1").textContent = "Error";
+        document.forms["form"]["username"].value = "";
+        document.getElementById("data").innerHTML = "";
+        alert("Data tidak valid\nNama harus diisi");
+        
+      } 
+      //email
+      else if (email == "") {
+        document.getElementById("error2").textContent = "Error";
+        document.forms["form"]["email"].value = "";
+        document.getElementById("data").innerHTML = "";
+        alert("Data tidak valid\nEmail harus diisi");
+      } 
+      else if (!email.match(emailValid)) {
+        document.getElementById("error2").textContent = "Error";
+        document.forms["form"]["email"].value = "";
+        document.getElementById("data").innerHTML = "";
+        alert("Data tidak valid\nFormat email tidak sesuai");
+      } 
+      //jam berangkat
+      else if (jam_pemberangkatan == "") {
+        document.getElementById("error3").textContent = "Error";
+        document.forms["form"]["jam_pemberangkatan"].value = "";
+        document.getElementById("data").innerHTML = "";
+        alert("Data tidak valid\nJam harus diisi");
+      } 
+      else if (!jam_pemberangkatan.match(jamValid)) {
+        document.getElementById("error3").textContent = "Error";
+        document.forms["form"]["jam_pemberangkatan"].value = "";
+        document.getElementById("data").innerHTML = "";
+        alert("Data tidak valid\nFormat jam tidak sesuai");
+      } 
+      //tujuan
+      else if (Tujuan_pemberangkatan == "") {
+        document.getElementById("error4").textContent = "Error";
+        document.forms["form"]["Tujuan_pemberangkatan"].value = "";
+        document.getElementById("data").innerHTML = "";
+        alert("Data tidak valid\nTujuan harus diisi");
+      } 
+      else if (Jumlah_tiket == "") {
+        document.getElementById("error5").textContent = "Error";
+        document.forms["form"]["Jumlah_tiket"].value = "";
+        document.getElementById("data").innerHTML = "";
+        alert("Data tidak valid\nJumlah tiket harus diisi");
+      }
+      //jumlah tiket
+      else if (Jumlah_tiket < 1 || Jumlah_tiket > 10) {
+        document.getElementById("error5").textContent = "Error";
+        document.forms["form"]["Jumlah_tiket"].value = "";
+        document.getElementById("data").innerHTML = "";
+        alert("Data tidak valid\nLimit jumlah tiket 1 - 10");
+      }
+      else{
+        document.getElementById("buatdata").innerHTML =
+          '<table id="data"><tr><th>Username</th><td><span id="Namapengguna">' +
+          username +
+          '</span></td></tr><tr><th>Email</th><td><span id="emailpengguna">' +
+          email +
+          '</span></td></tr><tr><th>Jam Pemberangkatan</th><td><span id="jambernagkat">' +
+          jam_pemberangkatan +
+          '</span></td></tr> <tr><th>Tujuan Pemberangkatan</th><td><span id="tujuanberangkat">' +
+          Tujuan_pemberangkatan +
+          '</span></td></tr><tr><th>Jumlah Tiket</th><td><span id="jumlahtiket">' +
+          Jumlah_tiket +
+          "</span></td></tr>";
+        document.getElementById("error1").textContent = "";
+        document.getElementById("error2").textContent = "";
+        document.getElementById("error3").textContent = "";
+        document.getElementById("error4").textContent = "";
+        document.getElementById("error5").textContent = "";
+      }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Praktikum 10_Salon</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid sticky-top px-0">
+            <div class="container-fluid bg-light">
+                <div class="container px-0">
+                    <nav class="navbar navbar-light navbar-expand-xl">
+                        <a href="index.html" class="navbar-brand">
+                            <h1 class="text-primary display-4">IT'S U</h1>
+                        </a>
+                        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars text-primary"></span>
+                        </button>
+                        <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                            <div class="navbar-nav mx-auto border-top">
+                                <a href="index.html" class="nav-item nav-link active">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <a href="service.html" class="nav-item nav-link">Services</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                    <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                        <a href="team.html" class="dropdown-item">Team</a>
+                                        <a href="gallery.html" class="dropdown-item">Gallery</a>
+                                        <a href="appointment.html" class="dropdown-item">Booking</a>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                                <a href="appointment.html" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-4 ms-4">Booking</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar End -->
+        
+        <!-- Carousel Start -->
+        <div class="container-fluid carousel-header px-0">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="img/aset1.jpg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-primary text-uppercase mb-3">IT'S U</h4>
+                                <h1 class="display-1 text-capitalize text-dark mb-3">Hair Concept</h1>
+                                <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">Trust your hair with us to look stylish</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Get Start</a>
+                                    <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/aset2.jpg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-primary text-uppercase mb-3">IT'S U</h4>
+                                <h1 class="display-1 text-capitalize text-dark mb-3">Hair Concept</h1>
+                                <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">Trust your hair with us to look cool</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Get Start</a>
+                                    <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/aset3.jpg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-primary text-uppercase mb-3">IT'S U</h4>
+                                <h1 class="display-1 text-capitalize text-dark mb-3">Hair Concept</h1>
+                                <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">Trust your hair with us to look Fashionable</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Get Start</a>
+                                    <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+
+        <!-- Services Start -->
+        <div class="container-fluid services py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 800px;">
+                    <p class="fs-4 text-uppercase text-center text-primary">Our Service</p>
+                    <h1 class="display-3">IT'S U</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-end">
+                                        <h3>Hair Cut</h3>
+                                        <p>Certainly you can get a haircut anywhere in town. What you will find at IT'S U Hair Concept are stylists & barbers who understand and respect the art of barbering, and take the time necessary to deliver a haircut that you want to come back for. You'll leave happy, satisfied and feel confident with a smile on your face.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/haircut.jpg" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/coloring.jpg" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>Hair Color</h3>
+                                        <p>We crazily love color! From enhancing your natural color with more depth, helping hide the greys or going bold with vivid colors. keep in mind that big changes take time (and a plan) and every head of hair is different, but we will do our best to help you have a happy journey that is in your budget. French Balayage | Vegan Color | French Glossing | Female & Male Color.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-end">
+                                        <h3>Kerastase Ritual</h3>
+                                        <po>Is a personalization service that only available in Kerastase Salon Partner. Completed with hot stone and more than 20 combination which can be formulated. It gives you an instant result and can be used for two main hair problems for example dry hair, damaged hair, or dull hair.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/kartase.png" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/blow.jpg" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>Permanent Blow Dry</h3>
+                                        <p>Permanent Blow Dry hair service aims to eradicate frizz and soften rebellious hair textures, resulting in enhanced manageability and a sleeker and volume appearance. The outcome of these treatments doesn't lead to perfectly straight hair, but rather delivers a lavish smoothness, entirely free from frizz.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-end">
+                                        <h3>Wash and Blow</h3>
+                                        <p>Indulge in the ultimate hair pampering experience with our exquisite wash and blow dry service. At It's U Hiarconcept, we understand that your hair deserves the best care and attention. Our skilled staff are dedicated to providing you with a rejuvenating and stylish experience that leaves you looking and feeling fabulous.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/wash.png" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/smoothing.png" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>Smoothing</h3>
+                                        <p>Welcome to IT'S U Hair Concept, a place where we bring the magic of sleek, smooth hair to life. Our smoothing services are designed to transform unruly locks into a luxurious cascade of silkiness, leaving you with hair that feels as good as it looks.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-end">
+                                        <h3>Manicure</h3>
+                                        <p>Elevate Your Look with Exquisite Manicure Services! Welcome to D'Mozza, where your hands become a canvas of elegance and style. Our manicure services offer a delightful escape into luxury, leaving you with impeccably groomed nails that make a statement</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/manicure.jpg" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/pedicurre.jpg" class="img-fluid rounded" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>Pedicure</h3>
+                                        <p>Step into Tranquility: Unveil Beautiful Feet with Our Pedicure Services! Welcome to D'Mozza, where the journey to beautiful and well-groomed feet begins. Our pedicure services offer a retreat of relaxation and rejuvenation, leaving you with feet that feel as good as they look.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="services-btn text-center">
+                            <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5">Service More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services End -->
+
+        
+        <!-- About Start -->
+        <div class="container-fluid about py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="video">
+                                <iframe src="img/asetvid.mp4"   frameborder="0" allow="autoplay;"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="fs-4 text-uppercase text-primary">About Us</p>
+                        <h1 class="display-4 mb-4">Your Best Hair Treatment</h1>
+                        <p class="mb-4">Our salon is completed with had to toe treatment, our salon is completed with male section as well. You can try many services in our salon like coloring, Kerastase Ritual, Hair Cut, Permanent Blow Dry, Smoothing, etc.
+                        </p>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fab fa-gitkraken fa-3x text-primary"></i>
+                                    <div class="ms-4">
+                                        <h5 class="mb-2">Special Offers</h5>
+                                        <p class="mb-0">IT'S U Hair Concept is completed with head to toe treatments, male section and hijab area as well. You can try many services in our salon like coloring, Kerastase Ritual, Hair Cut, Permanent Blow Dry, Smoothing and many more!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5">Explore More</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!-- Modal Video -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                                allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Appointment Start -->
+        <div class="container-fluid appointment py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="appointment-form p-5">
+                            <p class="fs-4 text-uppercase text-primary">Get In Touch</p>
+                            <h1 class="display-4 mb-4 text-white">Get Booking</h1>
+                            <form>
+                                <div class="row gy-3 gx-4">
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control py-3 border-white bg-transparent text-white" placeholder="First Name">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="email" class="form-control py-3 border-white bg-transparent text-white" placeholder="Email">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select class="form-select py-3 border-white bg-transparent" aria-label="Default select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="date" class="form-control py-3 border-white bg-transparent">
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <textarea class="form-control border-white bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <button type="button" class="btn btn-primary btn-primary-outline-0 w-100 py-3 px-5">SUBMIT NOW</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="appointment-time p-5">
+                            <h1 class="display-5 mb-4">Opening Hours</h1>
+                            <div class="d-flex justify-content-between fs-5 text-white">
+                                <p>Saturday:</p>
+                                <p>09:00 am - 10:00 pm</p>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5 text-white">
+                                <p>Sunday:</p>
+                                <p>09:00 am - 10:00 pm</p>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5 text-white">
+                                <p>Monday:</p>
+                                <p>09:00 am - 10:00 pm</p>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5 text-white">
+                                <p>Tuesday:</p>
+                                <p>09:00 am - 10:00 pm</p>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5 text-white">
+                                <p>Wednes:</p>
+                                <p>09:00 am - 08:00 pm</p>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5 text-white mb-4">
+                                <p>Thursday:</p>
+                                <p>09:00 am - 05:00 pm</p>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5 text-white mb-4">
+                                <p>Friday:</p>
+                                <p>CLOSED</p>
+                            </div>
+                            <p class="text-dark">Check out seasonal discounts for best offers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Appointment End -->
+
+
+        <!-- Gallery Start -->
+        <div class="container-fluid gallery py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                    <p class="fs-4 text-uppercase text-primary">Our Gallery</p>
+                    <h1 class="display-4 mb-4">Let's See Our Gallery</h1>
+                </div>
+                
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/galeri1.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/galeri2.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/galeri3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/galeri4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/galeri5.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/galeri6.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/galeri7.jpg" alt="">
+                                                </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/galeri8.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/galeri9.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/galeri10.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- gallery End -->
+
+        <!-- Team Start -->
+        <div class="container-fluid team py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                    <p class="fs-4 text-uppercase text-primary">Meet Our Stylists</p>
+                    <h1 class="display-4 mb-4">IT'S U</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="team-item">
+                            <div class="team-img rounded-top">
+                                <img src="img/tim1.png" class="img-fluid w-100 rounded-top bg-light" alt="">
+                            </div>
+                            <div class="team-text rounded-bottom text-center p-4">
+                                <h3 class="text-white">Eddy</h3>
+                                <p class="mb-0 text-white">Male/Female Haircut</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="team-item">
+                            <div class="team-img rounded-top">
+                                <img src="img/tim2.png" class="img-fluid w-100 rounded-top bg-light" alt="">
+                            </div>
+                            <div class="team-text rounded-bottom text-center p-4">
+                                <h3 class="text-white">Wahab</h3>
+                                <p class="mb-0 text-white">Male/Female Haircut</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="team-item">
+                            <div class="team-img rounded-top">
+                                <img src="img/tim3.png" class="img-fluid w-100 rounded-top bg-light" alt="">
+                            </div>
+                            <div class="team-text rounded-bottom text-center p-4">
+                                <h3 class="text-white">Resky</h3>
+                                <p class="mb-0 text-white">Male/Female Haircut</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="team-item">
+                            <div class="team-img rounded-top">
+                                <img src="img/tim4.png" class="img-fluid w-100 rounded-top bg-light" alt="">
+                            </div>
+                            <div class="team-text rounded-bottom text-center p-4">
+                                <h3 class="text-white">Gio</h3>
+                                <p class="mb-0 text-white">Male/Female Haircut</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="team-item">
+                            <div class="team-img rounded-top">
+                                <img src="img/tim5.png" class="img-fluid w-100 rounded-top bg-light" alt="">
+                            </div>
+                            <div class="team-text rounded-bottom text-center p-4">
+                                <h3 class="text-white">Yenny</h3>
+                                <p class="mb-0 text-white">Male/Female Haircut</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Our Services</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Hair Cut</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Hair Color</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Kertastase Ritual</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Permanent Blow Dry</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Wash and Blow</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Smoothing</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Manicure</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Pedicure</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Schedule</h4>
+                            <p class="text-muted mb-0">Monday: <span class="text-white"> 09:00 am - 10:00 pm</span></p>
+                            <p class="text-muted mb-0">Saturday: <span class="text-white"> 09:00 am - 08:00 pm</span></p>
+                            <p class="text-muted mb-0">Sunday: <span class="text-white"> 09:00 am - 05:00 pm</span></p>
+                            <h4 class="my-4 text-white">Address</h4>
+                            <p class="mb-0"><i class="fas fa-map-marker-alt text-secondary me-2"></i> - Jagakarsa, jakarta selatan</p>
+                            <p class="mb-0"><i class="fas fa-map-marker-alt text-secondary me-2"></i> - Bogor, Jawa Barat</p>
+                            <p class="mb-0"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Rawa Mangun, Jakarta Timur</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Follow Us</h4>
+                            <a href=""><i class="bi bi-instagram"></i> IT'SU_HairConcept</a>
+                            <a href=""><i class="bi bi-youtube"></i> IT'SU_HairConcept</a>
+                            <a href=""><i class="bi bi-linkedin"></i> IT'SU_HairConcept</a>
+                            <h4 class="my-4 text-white">Contact Us</h4>
+                            <p class="mb-0"><i class="fas fa-envelope text-secondary me-2"></i> info@itsuhairconcept.com</p>
+                            <p class="mb-0"><i class="fas fa-phone text-secondary me-2"></i> (+012) 3456 7890 123</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-4 text-center text-md-start mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Sahrul Firdaus</a>, This is only for learning practice.</span>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex justify-content-center">
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="bi bi-whatsapp"></i></a>
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="bi bi-youtube"></i></a>
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="bi bi-instagram"></i></a>
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-0"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end text-white">
+                        Designed With <a class="border-bottom" href="https://getbootstrap.com">Bootstrap</a></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i class="fa fa-arrow-up" style="font-size: 10px;">Back to top</i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=f5f4b80023bf93197204872bb50c83d5db918668'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>

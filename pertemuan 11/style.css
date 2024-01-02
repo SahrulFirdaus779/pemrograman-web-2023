@@ -1,0 +1,9 @@
+body{
+    background-color: gainsboro;
+}
+hr{
+    text-decoration: double;
+}
+input, button{
+    background-color: violet;
+}

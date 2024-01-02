@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sketsa web2</title>
+        <style>
+            html, body, header, footer, article, aside {
+            box-sizing: border-box;
+            height: 100%;
+            }
+            body {
+                background-color: #ff78a0;
+                flex-direction: column;
+                display: flex;
+                height: 100%;
+                margin-top: 0;
+                padding :0;
+            }
+            header, footer {
+                text-align: center;
+                background-color: #57cfbb;
+                flex: 0.1;
+                margin: 2%;
+            }
+            footer {
+                padding-bottom: 6%;
+            }
+            .tengah {
+                display: flex;
+            }
+            article {
+                background-color: #ff3d61;
+                order: 1;
+                flex: 2;
+                margin-right: 2%;
+            }
+            aside {
+                background-color: #10ad9e;
+                flex: 1;
+                margin-right: 2%;
+                margin-left: 2%;
+            }
+            article, aside {
+                text-align: center;
+            }
+            header, footer, aside, article {
+                padding: 2%;
+            }
+            img {
+                justify-content: space-around;
+                align-items: flex-end
+            }
+            p {
+                padding-top: 20%;
+            }
+            aside p {
+                padding-top: 40%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>Header</header>
+        <div class="tengah">
+            <aside>
+                <p>Aside</p>
+            </aside>
+            <article>
+                    <p>Article</p>
+                    <img src="https://dl.dropbox.com/scl/fi/rnlv1xw2pgi5l6e3a9pe6/burung1.png?rlkey=7eahigvf2zges38x3vuhkuanq&dl=0" alt="gambar1">
+                    <img src="https://dl.dropbox.com/scl/fi/gzze62vvwqqrzuk7r8ro2/burung2.png?rlkey=8a2ux96i2l66pr0lg7fj2xupo&dl=0" alt="gambar2" class="b2">
+                    <img src="https://dl.dropbox.com/scl/fi/8izlf5cqenezyi9xfh1wo/burung4.png?rlkey=t2nizf7opwuu47jrg5fgepkt8&dl=0" alt="gambar3">
+            </article>
+        </div>
+        <footer>Footer</footer>
+    </body>

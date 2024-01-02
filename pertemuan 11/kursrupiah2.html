@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Kurs Rupiah</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Menghitung Kurs Rupiah dengan onChange</h1>
+
+    <label for="jumlahDollar">Masukkan Jumlah Dollar:</label>
+    <input type="number" id="jumlahDollar" onChange="hitungNilaiRupiah()" />
+
+    <p>Nilai dalam Rupiah: <span id="nilaiRupiah"></span></p>
+
+    <script>
+      function hitungNilaiRupiah() {
+        let jumlahDollar = document.getElementById("jumlahDollar").value;
+        const satudollar = 14650;
+        //Rumus
+        const nilaiRupiah = satudollar*jumlahDollar;
+
+        document.getElementById("nilaiRupiah").innerText = "Rp " + nilaiRupiah;
+      }
+    </script>
+  </body>
+</html>

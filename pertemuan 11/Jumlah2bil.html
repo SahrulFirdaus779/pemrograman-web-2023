@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menghitung Dua Buah Bilangan</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1> Hitung Jumlah Dua Bilangan </h1>
+        <hr>
+        <label for="nilai1"> Masukkan Nilai Bilangan Pertama:</label>
+        <br>
+        <input type="number" id="nilai1" onchange="jumlah()"></input>
+        <p>+</p>
+        <label for="nilai2"> Masukkan Nilai Bilangan Kedua:</label>
+        <br>
+        <input type="number" id="nilai2" onchange="jumlah()"></input>
+        <p>=</p>
+        <label for="jumlah">Hasil Oprasi bilangan</label>
+        <br>
+        <input type="number" id="jumlah" readonly></input>
+    <script>
+        function jumlah(){
+            let bilanganPertama = document.getElementById("nilai1").value;
+            let bilanganKedua = document.getElementById("nilai2").value;
+            document.getElementById("jumlah").value = Number(bilanganPertama) + Number(bilanganKedua)
+        }
+    </script>
+    </body>
+</html>

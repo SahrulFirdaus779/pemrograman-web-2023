@@ -1,0 +1,22 @@
+img{
+    width: 10%;
+}
+nav {
+    background-color: aquamarine;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+nav li.about{
+    margin-left: auto;
+}
+nav li{
+    padding-left: 2em;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
